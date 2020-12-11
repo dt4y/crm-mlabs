@@ -1,38 +1,50 @@
 .App {
-  text-align: center;
+  @apply flex flex-col justify-center align-middle;
+}
+.main {
+  @apply mx-auto;
+}
+.header {
+  @apply mx-auto bg-gray-200 rounded-md m-2 p-4 shadow-md;
+}
+.addCompanyBtn {
+  @apply bg-blue-400 p-2 m-2 rounded-md text-white font-semibold;
+}
+.listContainer {
+  @apply bg-gray-200 rounded-md m-2 p-4 shadow-md;
+}
+.companyName {
+  @apply text-lg font-bold;
+}
+.viewCompBtn {
+  @apply bg-blue-400 p-2 m-2 rounded-md text-white font-semibold;
+}
+.deleteBtn {
+  @apply bg-red-400 p-2 m-2 rounded-md text-white font-semibold;
+}
+.editBtn {
+  @apply bg-green-500 p-2 m-2 rounded-md text-white font-semibold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contactName {
+  @apply text-lg font-bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.editContainer {
+  @apply h-full p-2 m-2 bg-gray-200 rounded-sm flex flex-col;
+}
+.edit {
+  @apply mx-auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputField {
+  @apply m-2 p-2 shadow-sm;
 }
 
-.App-link {
-  color: #61dafb;
+.heading {
+  @apply text-center font-semibold text-lg;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pageTitle {
+  @apply text-3xl font-bold text-center mb-3;
 }
